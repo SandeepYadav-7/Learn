@@ -1,0 +1,12 @@
+body {
+	background:#05f28a;
+}
+
+td{
+	background:#3a8f93;
+	border:2px solid black;
+}
+
+ol, ul {
+	background:#48ac78;
+}
