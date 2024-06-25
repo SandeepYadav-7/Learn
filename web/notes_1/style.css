@@ -1,7 +1,16 @@
 body {
-	background:#05f28a;
+	background:#05f28a; 
+	
+	/*
+	background-image: url('_media/load.gif');
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:-100px;
+	height:100vh;
+	margin:0;
+	padding:0;
+	*/
 }
-
 td{
 	background:#3a8f93;
 	border:2px solid black;
