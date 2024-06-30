@@ -1,0 +1,86 @@
+<!-- CSS selectots 
+
+0. Universal Selectot
+1. Element Selector
+2. Class, ID selector
+3. Child
+4. Pseudo 
+   anchor(link, visited, active, *hover*, *first-child*)
+
+
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Selectors</title>
+<style type="text/css">
+/* 0. Universal */
+*{
+margin: 0;
+padding: 0;
+}
+
+/* 1. Element selectot */
+/*
+div{
+background:red;
+}
+*/
+
+/* 2. Class and ID */
+.red {
+background:red;
+}
+#green {
+background:green;
+}
+
+/* 3. Child selector */
+div > p {
+background: yellow;
+}
+
+div p {
+background: pink;
+}
+
+/* 4. Pseudo Selector */
+a:link {
+color: green;
+}
+a:visited {
+color:yellow;
+}
+a:active{
+background:red;
+}
+#hover:hover{
+background: green;
+}
+</style>
+</head>
+<body>
+
+<div class="red">
+    This is a div
+    <article>
+    <p>
+	    This is pata inside div
+    </p>
+    <article>
+</div>
+<div id="green">
+	This is another div
+</div>
+
+<a href="https://www.google.com" >Go to Google</a>
+<a href="https://www.Facebook.com" >Go to Facebook</a>
+
+<p id="hover">
+	I am a para, Hover on me
+</p>
+
+</body>
+</html>
