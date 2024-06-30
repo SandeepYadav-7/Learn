@@ -1,0 +1,59 @@
+<!-- CSS list styles
+
+what makes list a *list*?
+"display=list-item" makes a space for *list-style* and *list-item*
+
+see the code for good understanding
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0"  >
+<title>CSS list styles</title>
+<style type="text/css">
+/* ========== list styles =========== */
+nav ul li{
+    /* list-style:none; */
+    /* list-style-type:"🙈"; */
+list-style-image:url("_media/resized1.webp");
+background:yellow; list-style-position:inside;
+    
+    /* list-style: disk inside; */
+    /* list-style: inside url(""); */
+}
+
+
+/* =========== nav bar ============ */
+/*
+*{
+margin:0;
+padding:0;
+}
+
+nav ul{
+display: flex;
+}
+
+nav ul li {
+list-style:none;
+padding:23px;
+}
+*/
+
+</style>
+</head>
+<body>
+
+<nav>
+	<ul>
+		<li>Home</li>
+		<li>About</li>
+		<li>Services</li>
+		<li>Contact</li>
+	</ul>
+</nav>
+
+</body>
+</html>

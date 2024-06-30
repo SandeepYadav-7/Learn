@@ -1,0 +1,62 @@
+<!-- CSS Display property
+
+display = none, inline, block, inline-block, *Flex*, *Grid*
+
+0. none
+   The element will disappear and browser won't take extra space.
+   use "visibility=hidden" if u want let browser take extra space for the element.
+
+1. inline
+   when doing inline, properties like margin,padding,width will not work properly
+   that's why we use *inline-block* for making element inline, plus giving it properties of block elements
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Display Property</title>
+<style type="text/css">
+*{
+margin:0;
+padding:0;
+}
+.box {
+border:2px solid black;
+/* display:inline; */   /*it won't work properly with margin,padding,width*/
+display:inline-block;
+padding: 45px;
+margin: 30px;
+width:250px;
+}
+
+
+
+/* i have explained these in the starting */
+.box1 {
+/* display:none; */
+visibility:hidden; 
+}
+
+</style>
+</head>
+<body>
+
+
+<!-- block div -->
+<div class="box box1">
+	This is a box
+</div>
+<div class="box">
+	This is another box
+</div>
+
+<!-- inline span -->
+<span>I am a good</span>
+<span>boy</span>
+
+
+</body>
+</html>

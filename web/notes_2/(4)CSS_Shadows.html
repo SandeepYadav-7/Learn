@@ -1,0 +1,66 @@
+<!-- CSS Shadows and outlines
+
+box-shadow: x y blur spread color inset;
+text-shadow: x y blur color;
+outline: width style color;
+
+**border:**
+1. is a part of in CSS box model
+2. have border-radius property
+3. cannot set offset value for borders  
+   (offset value means distance from the element)
+4. can have different width for different side
+
+**outline:**
+1. not in CSS box model, and it does not take any space
+2. traces border and take the shape of it
+3. can set offset value
+4. outlines have a uniform width
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0"  >
+<title>CSS Shadows</title>
+<style type="text/css">
+
+.b-shadow {
+border:2px solid black;
+box-shadow:15px 10px 10px 0 green;
+        /* x y blur spread color inset */
+}
+
+p{
+text-shadow:5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#outline {
+outline:2px solid green;
+border:2px solid black; border-radius:10px;
+outline-offset:10px;
+
+}
+</style>
+</head>
+<body>
+
+<!-- box-shadow -->
+<div class="b-shadow">
+	This is a box
+</div>
+
+<!-- text-shadow -->
+<p>
+	I am a paragraph, i will be a Hokage
+</p>
+
+<!-- outline -->
+<div id="outline">
+	Yo i am a div specially made for outline property
+</div>
+
+</body>
+</html>
