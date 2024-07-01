@@ -1,0 +1,41 @@
+<!-- CSS Overflow Property
+
+0. overflow-x, overflow-y
+
+1. overflow = hidden, clip, scroll, auto
+   hidden and clip are somewhat same, but clip just also disables the scroll bar programmatically (that's what CWH sir said)
+   
+2. "white-space:nowrap;" and "text-overflow:ellipsis;"
+   hides the text that overflows, and adds three dots at the end
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0"  >
+<title>CSS Overflow Property</title>
+<style type="text/css">
+.container {
+border:2px solid black;
+width:40vw;
+height:40vh;
+
+overflow:scroll;
+    /* overflow: auto scroll; */  /*x and y*/
+white-space:nowrap;
+text-overflow:ellipsis;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed risus sapien. Nulla pellentesque mattis felis vehicula aliquet. Sed luctus diam vitae mauris luctus efficitur. Pellentesque ut enim in metus vulputate fermentum in sit amet orci. Nunc dolor mi, maximus et accumsan ac, iaculis vitae felis. Praesent tempor metus vitae.
+	
+</div>
+
+</body>
+</html>

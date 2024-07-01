@@ -1,0 +1,129 @@
+<!-- CSS Positions and z-index
+
+position = static, relative, absolute, fixed
+
+0. Z-index only works with positioned elements
+
+1. static: (default)
+   when static, properties like top,left,bottom,right,z-index don't work.
+   use *relative* if u want to use z-index without affecting the actual web-design
+
+2. Absolute:
+   when doing Absolute, it won't affect unless u add top,bottom,left,right any of these properties
+   same goes for *Relative* too.
+   ***but the important thing is***
+   *absolute* with *top,left,bottom,right* properties element will search for its parent, and will see if that is a positioned element
+   if it is positioned, then it will take position relative to that element, or otherwise will search for parent of parent element until it reaches the Html tag itself
+   Basically, ye **nearst positioned ancestors** ke relative me lagta hai
+
+3. Fixed:
+   Element *Fixed* will consider HTML the *nearest positioned ancestor*
+
+see the code for good understanding
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0"  >
+<title>CSS Position Property</title>
+<style type="text/css">
+*{
+margin:0;
+padding:0;
+}
+
+.parent {
+border:2px solid purple;
+margin:34px;
+padding:30px;
+}
+
+.box{
+width:60vw; 
+/* i discovered that when we use "absolute" position in one of the boxes,
+   it takes the %width value of its *nearest positioned ancestor*
+*/
+height:150px;
+border:2px solid black;
+margin:5px;
+padding:5px;
+}
+
+.box1{
+background-color:aqua;
+
+}
+
+.box2 {
+background-color:fuchsia;
+
+}
+
+.box3 {
+background-color:lime;
+}
+
+.box4{
+background-color:olive;
+}
+
+/* 1. relative and z-index */
+/*
+.box1{
+position:relative;
+z-index:1;
+}
+
+.box2 {
+position:relative;
+top:-50px;
+left:50px;
+}
+
+.box3 {
+}
+
+.box4{
+}
+*/
+
+
+/* 2. Absolute */
+/*
+.parent {
+position:absolute;
+}
+
+.box1{
+position:absolute;
+top: 0px;
+}
+*/
+
+
+/* 3. Fixed */
+/*
+.parent {
+height:150vh;
+}
+.box3 {
+position:fixed;
+height:40px;
+bottom:0px;
+}
+*/
+</style>
+</head>
+<body>
+
+<div class="parent">
+	<div class="box box1"></div>
+	<div class="box box2"></div>
+	<div class="box box3"></div>
+	<div class="box box4"></div>
+</div>
+
+</body>
+</html>
