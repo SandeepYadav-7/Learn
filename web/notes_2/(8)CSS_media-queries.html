@@ -1,0 +1,67 @@
+<!-- CSS Media-queries
+
+@media not|only mediaType and (expressions) {
+   CSS-code;
+}
+
+media screen and (orientation: landscape) {
+   CSS-code;
+}
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<title>CSS Media-queries</title>
+<style type="text/css">
+body{
+background: red;
+}
+
+.boxes {
+display:flex;
+}
+
+.box {
+width:250px;
+height:250px;
+background:rgba(200, 147, 105, 0.9);
+margin:5px;
+padding:5px;
+}
+
+/* 1. */
+@media only screen and (max-width: 394px) {
+body{
+background: blue;
+}
+.boxes{
+flex-direction:column;
+}
+}
+
+/* 2. */
+@media screen and (orientation: landscape){
+body {
+background: #472aef;
+background:#fff;
+}
+
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="boxes">
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+</div>
+
+</body>
+</html>

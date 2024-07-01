@@ -1,0 +1,64 @@
+<!-- CSS Float and Clear
+
+i have used one more selector in this code
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<title>CSS Float and Clear</title>
+<style type="text/css">
+.cards {
+border:2px solid black;
+display:flow-root; /* see the code output in landscape */
+}
+
+img {
+width:200px;
+float:right;
+}
+
+.card {
+border:2px solid purple;
+}
+
+.card:nth-child(3) {
+clear:both;
+background:aqua;
+}
+
+</style>
+</head>
+<body>
+
+<div class="cards">
+    <!-- image -->
+	<img src="_media/Naruto.jpg" alt="Naruto" />
+	
+	<!-- cards -->
+	<div class="card">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie ante ut sapien elementum, ac commodo nibh eleifend. Nulla facilisi. Nunc condimentum ligula sapien, sit amet faucibus nisi finibus eget. Maecenas ultricies luctus elementum
+		</p>
+	</div>
+	
+	<div class="card">
+		<!-- card 2 -->
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum lacus sed magna facilisis, a pulvinar eros fermentum. In hac habitasse platea dictumst. Aenean sagittis eros ac dui volutpat tempus. Nam bibendum tellus nibh, eu ultrices augue faucibus ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in aliquet nulla, et euismod nibh. Pellentesque venenatis felis id orci molestie, dignissim blandit risus suscipit. Proin at lacus nec turpis molestie fermentum. Suspendisse sed dolor vel ante volutpat tincidunt. Maecenas in porttitor neque.
+			
+			Curabitur eu dictum mi. Phasellus vitae tempus ex. Nulla condimentum viverra est, sit amet molestie nibh mattis eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a ex posuere, pulvinar nibh in, faucibus ante. Vestibulum eu lacus mauris. Ut scelerisque, diam quis facilisis tincidunt, sapien dolor dapibus metus, ac auctor sem nisi quis neque. Maecenas pulvinar libero sit amet lacus bibendum, eget commodo arcu malesuada. Etiam eget dui nec nunc pharetra fermentum. Quisque luctus facilisis ex, vitae pellentesque tellus sollicitudin nec. Donec convallis ac lorem a vestibulum. Donec vitae pharetra eros. Maecenas ut nulla purus. Aliquam erat volutpat. Aliquam eu suscipit arcu. Donec sit amet semper est, at porta tellus.
+			
+			Nullam eget ipsum rhoncus, mattis neque eget, suscipit neque. Suspendisse ullamcorper dignissim pulvinar. In gravida a tortor at auctor. Cras elementum urna erat, eu venenatis est faucibus elementum. Nullam sem augue, scelerisque vitae feugiat id, tincidunt a nibh. Proin vitae bibendum felis. Suspendisse commodo nunc at sem ultrices, ac dictum tellus semper. Fusce augue mi, pulvinar et ante in, imperdiet euismod felis. Duis pretium ipsum nunc, vulputate lobortis urna sollicitudin nec. Suspendisse porta facilisis nibh eu fermentum. Vivamus vehicula eleifend orci vel posuere. Mauris eu dui in ante vehicula pharetra ut rhoncus augue.
+			
+			Proin ultricies, felis ut lobortis vestibulum, justo est faucibus urna, et cursus purus magna consectetur dolor. Sed in feugiat sapien. Mauris ut tincidunt lorem, in ullamcorper sem. Fusce quis pretium quam, at feugiat ex. Mauris molestie massa vitae elit sodales, sit amet commodo mi tempor. Nulla ut.
+		</p>
+	</div>
+	<div class="card">card 3</div>
+</div>
+
+</body>
+</html>
