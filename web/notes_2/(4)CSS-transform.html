@@ -1,0 +1,65 @@
+<!-- CSS Transform
+
+0. translate
+1. rotate, rotateX, transform-origin
+2. skew, scale
+
+--> 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<title>CSS Transform</title>
+<style type="text/css">
+* {
+margin:0;
+padding:0;
+}
+
+.container{
+height:80vh;
+border:2px solid red;
+background:#adf;
+}
+
+.box {
+width:100px;
+height:100px;
+background:#def;
+border:2px solid black;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+transition:.3s;
+}
+
+.box:hover {
+/* transform:translate(50%, 50%); */
+
+transform:rotate(180deg); */
+/* transform:rotate(.5turn); */
+/* transform:rotateX(45deg); */
+/* transform-origin:35% 0%; */   /* idk why it's not working */
+
+/* transform:skew(20deg); */
+/* transform:scale(2); */
+
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+	<div class="box">
+	box
+	</div>
+</div>
+
+</body>
+</html>
