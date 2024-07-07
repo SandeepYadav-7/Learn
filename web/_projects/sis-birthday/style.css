@@ -1,0 +1,73 @@
+/* 
+
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing:border-box;
+
+font-family: "Poppins", sans-serif;
+font-family: "Baloo Bhai 2", sans-serif;
+}
+
+/* ============= clock ============ */
+.clock-container {
+/* center */
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+}
+
+.clock-box {
+/* background:#adf; */
+}
+
+.clock-box h1 {
+text-align:center;
+font-size:1.1em;
+letter-spacing:0.2em;
+
+margin:25px 0;
+}
+
+.timer {
+display:flex;
+}
+
+/* specially note this selector */
+.timer div {
+background:yellow;
+margin:0 5px;
+margin-bottom:200px;
+-webkit-box-reflect: below 1px  linear-gradient(transparent,#004);
+}
+
+
+/* note: display block and flex */
+.timer div span {
+/* box */
+display:block;
+width:100px;
+height:100px;
+background:linear-gradient(to right, #ffa82d, #e62526);
+
+/* text */
+color:#fff;
+font-size:3em;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.timer div span:nth-child(2){
+height:30px;
+background:linear-gradient(#134E92, #1286C1);
+
+font-size:1em;
+letter-spacing:3px;
+}
