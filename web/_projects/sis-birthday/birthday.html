@@ -10,22 +10,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" >
 <title>Happy Birthday Sis!</title>
 <link rel="stylesheet" href="style.css">
-<link rel="icon" type="image/x-icon" href="../../notes2/_media/resized.webp">
 </head>
 <body>
 
-<!-- clock -->
+<!-- ========== clock ============== -->
 <div class="clock-container">
 	<div class="clock-box">
-		<h1>YOUR TIME IS NOW</h1>
+		<h1>ADVANCE HAPPY BIRTHDAY!</h1>
 		
 		<div class="timer">
-			<div><span>00</span><span>Hours</span></div>
-			<div><span>00</span><span>Minutes</span></div>
-			<div><span>00</span><span>Seconds</span></div>
+			<!-- "clock-digit" is for digits -->
+			<!-- "clock-title" is for title like "hours/minutes/seconds" -->
+			<div><span id="clock-digit1">00</span><span id="clock-title1"></span></div>
+			<div><span id="clock-digit2">00</span><span id="clock-title2"></span></div>
+			<div><span id="clock-digit3">00</span><span id="clock-title3"></span></div>
 		</div>
 	</div>
 </div>
+<!-- bg music -->
+<audio src="_media/Afternoon_of_Konoha.mp3" id="clock-bg-audio" controls="" loop="loop" autoplay="autoplay" ></audio>
 
+<!-- importing js for alert box -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<!-- my js -->
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
